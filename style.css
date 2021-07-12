@@ -1,0 +1,85 @@
+body {
+  background-color:#EAEFF5; 
+}
+
+#bloc_page { /* Cette unique division englobe et délimite tout le contenu */
+  width:50%;
+  min-width:1000px;
+  color:#56BEE9;
+  background-color:#BEE6F6;
+  padding-top:10px;
+  padding-bottom:10px;
+  margin:auto; /* centrage */
+}
+
+header { /* Ce bloc contient ma photo et mon nom */
+  background-color:white;
+  width:25%; /* Largeur 25% des 50% du bloc_page*/
+  font-family:"Arial Black",sans-serif;
+  text-align:center; /* Centrage du texte dans le bloc */
+  border-radius:10px;
+  margin:auto; /* centrage du bloc */
+  margin-top:15px;
+  margin-bottom:25px;
+  /* disposition en colonne de photo et nom, avec espaces autour */
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+}
+
+.encadre { /* classe : grand bloc conteneur avec bordure fine bleue arrondie */
+  border : 1px solid #56BEE9;
+  border-radius:10px;
+  margin :10px; /* marge extérieure*/
+  padding:10px; /* marge intérieure */
+}
+
+article{ /*  Les 4 blocs en dessous de photo et nom */
+  background-color:white;
+  width:40%;
+  min-width:200px;
+  border-radius:10px;
+  padding:5px;
+  margin:10px;
+  /*text-align:justify;*/
+}
+
+article h1{ /* titres h1 inclus dans un article */
+  text-transform:uppercase;
+}
+
+.encadre h1{ /* titres h1 inclus dans les encadrés */
+  text-transform:uppercase;
+  text-align:center;
+}
+
+.ligne { /* classe : bloc contenant un alignement horizontal de blocs */
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  flex-wrap:wrap;  
+}
+
+.bloc_photo{ /* classe : bloc contenant une photo, une description et un lien */
+  background-color:white;
+  width:30%;
+  min-width:200px;
+  border-radius:10px;
+  padding:5px;
+  margin:10px;
+  text-align:center;
+}
+
+#contact{ /* tous les textes de la section contact */
+  text-align:center;
+}
+#contact h2{
+  font-size:1em;
+  text-transform:uppercase;
+}
+
+.bloc_contact{ /* classe : l'un des trois blocs de la section contact */
+  width:20%;
+  min-width:200px;
+  text-align:center;
+}
